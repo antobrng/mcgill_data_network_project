@@ -1,16 +1,3 @@
-"""
-╔══════════════════════════════════════════════════════════════╗
-║          AUTO REGRESSION ENGINE  –  v8.0                     ║
-║  Expects a pre-cleaned CSV (numeric + categorical columns)   ║
-║  Select a dependent variable → find the best predictor       ║
-╚══════════════════════════════════════════════════════════════╝
-
-Regression types : Best Subset (1 to 3 vars) & Multivariate (All)
-Algorithms       : Linear · Log-Linear · Polynomial (OLS, Ridge, Lasso) · Logistic
-Scoring metric   : Adjusted R² (continuous) | Accuracy (classifiers)
-Penalty metrics  : AIC (Akaike Information Criterion)
-"""
-
 import sys
 import warnings
 import itertools
