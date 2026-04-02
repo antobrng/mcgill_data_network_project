@@ -25,3 +25,63 @@ We built a unified platform consisting of an intelligent data-cleaning backend (
 
 ## The Value Proposition
 We aren't just automating code; we are automating the *methodology* of a data scientist. By combining rigorous econometric principles, scalable software architecture, and an AI-interpreted UI, our project bridges the gap between a raw CSV and actionable business intelligence.
+
+Getting Started: How to Execute the Code
+1. Install Dependencies
+
+This project is built using Python. To run the engine and the UI, you need to install the following core data science and web libraries.
+
+Run this command in your terminal:
+
+Bash
+pip install pandas numpy scipy scikit-learn streamlit altair google-genai
+2. Set Up the Gemini API Key (Required for AI Insights)
+
+To enable the "AI Executive Summary" feature, you need a free Google Gemini API key.
+
+Generate an API key from Google AI Studio.
+
+Set the key as an environment variable in the terminal window you plan to run the app from:
+
+For Mac/Linux:
+
+Bash
+export GEMINI_API_KEY="your_api_key_here"
+For Windows (Command Prompt):
+
+DOS
+set GEMINI_API_KEY="your_api_key_here"
+3. Launch the Application
+
+Once your dependencies are installed and your API key is set, launch the Streamlit interface directly from your terminal:
+
+Bash
+streamlit run app.py
+(Note: If you encounter a "command not found" error, try running python3 -m streamlit run app.py instead).
+
+# Getting started: How to execute the code
+
+## Install Dependencies
+
+`pip install pandas numpy scipy scikit-learn streamlit altair google-genai`
+
+## Set Up the Gemini API Key
+
+To enable the "AI Executive Summary" feature, you need a free Google Gemini API key.
+Generate an API key from Google AI Studio.
+
+Set the key as an environment variable in the terminal window you plan to run the app from:
+
+`export GEMINI_API_KEY="your_api_key_here`
+
+## Launch the application
+
+From the terminal launch the steamlit terminal
+
+`streamlit run app.py`
+
+Note: If you encounter a "command not found" error, try running python3 -m streamlit run app.py instead).
+
+The UI will automatically open in your default web browser (typically at http://localhost:8501). From there, simply upload your CSV file, clean the data, select your target variable, and start generating insights.
+
+
