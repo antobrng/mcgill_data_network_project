@@ -164,6 +164,7 @@ if st.session_state.cleaned_df is not None:
                 st.caption(f"Red line shows the '{reg_name}' fitted curve over your data points.")
                 
             elif not is_classification:
+
                 min_val = min(plot_df['Actual'].min(), plot_df['Predicted'].min())
                 max_val = max(plot_df['Actual'].max(), plot_df['Predicted'].max())
                 

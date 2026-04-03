@@ -159,8 +159,6 @@ def evaluate_all_predictors(df: pd.DataFrame, dependent_var: str, use_cv: bool) 
             
             # Format label for the UI Table
             label = " + ".join(combo_list)
-            if len(label) > 36:
-                label = label[:33] + "..."
 
             # Extract subset and convert categories to dummies
             X_subset_df = df[combo_list]
