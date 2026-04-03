@@ -39,7 +39,7 @@ Generate an API key from Google AI Studio.
 
 Set the key as an environment variable in the terminal window you plan to run the app from:
 
-`export GEMINI_API_KEY="your_api_key_here`
+`export GEMINI_API_KEY="your_api_key_here"`
 
 ## Launch the application
 
